@@ -1,4 +1,6 @@
-.venv_aq
-data
-config
+.venv_aq/
+data/
+config/
 models/
+logs/
+**/.ipynb_checkpoints/
