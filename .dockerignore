@@ -1,0 +1,6 @@
+data
+notebooks
+logs
+__pycache__
+*.pyc
+.git

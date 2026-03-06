@@ -1,0 +1,21 @@
+name: air-quality
+services: 
+  ui:
+    build:
+      context: .
+      dockerfile: ./docker/ui/Dockerfile
+    image: bagaskoroah/ui_aq
+    container_name: frontend_aq
+    depends_on:
+      - api
+    ports:
+      - "8501:8501"
+    
+  api:
+    build:
+      context: .
+      dockerfile: ./docker/api/Dockerfile
+    image: bagaskoroah/api_aq
+    container_name: backend_aq
+    ports:
+      - "8080:8080"
