@@ -9,10 +9,6 @@ import utils
 import data_pipeline
 import preprocessing
 
-
-# Constant variables.p
-PATH_CONFIG = "../config/config.yaml"
-
 config = utils.load_config()
 ohe_stasiun = utils.deserialize_data(config["path_fitted_encoder_stasiun"])
 le_encoder = utils.deserialize_data(config["path_fitted_encoder_label"])

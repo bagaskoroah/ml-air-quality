@@ -3,10 +3,8 @@ import yaml
 import joblib
 
 from datetime import datetime
-from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-PATH_CONFIG = BASE_DIR / "config" / "config.yaml"
+PATH_CONFIG = "./config/config.yaml"
 
 # Common functions.
 # Function to load configuration parameter.
